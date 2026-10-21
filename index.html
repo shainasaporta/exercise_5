@@ -4,6 +4,7 @@
   <title>Exercise 5: CSS Layout</title>
   <meta charset="utf-8">
   <style>
+    *{ box-sizing: border-box; }
     body {
       margin: 0;
       padding: 20px;
@@ -12,41 +13,62 @@
 
     header {
       padding: 30px;
-      margin-bottom: 0;
+      margin-bottom: 10px;
+      background-color: darkslategray;
+      color: oldlace;
+      position: relative;
     }
 
     header h1 {
       margin: 0;
       font-size: 2em;
+      font-family: sans-serif;
     }
 
     .badge {
       padding: 5px 15px;
       font-size: 0.8em;
       font-weight: bold;
+      background-color: darkseagreen;
+      border-radius: 35px;
+      width: 108px;
+      position: absolute;
+      top: 40px;
+      right: 40px;
     }
 
     #main-content {
-      padding: 0;
+      padding: 15px;
       vertical-align: top;
+      background-color: d0e3d0;
+      width: 65%;
+      display: inline-block;
     }
 
     #main-content h2 {
       margin-top: 0;
+      font-family: sans-serif;
     }
 
     #main-content p {
       margin-bottom: 15px;
+      font-family: serif;
     }
 
     #sidebar {
-      padding: 20px;
+      padding: 30px;
       vertical-align: top;
+      background-color: darkslategray;
+      color: oldlace;
+      width: 30%;
+      display: inline-block;
+      margin-left: 4%;
     }
 
     #sidebar h3 {
       margin-top: 0;
       font-size: 1.2em;
+      font-family: sans-serif;
     }
 
     #sidebar ul {
@@ -55,12 +77,18 @@
     }
 
     #sidebar li {
-      padding: 8px 0;
+      padding: 8px 0; 
+      border-bottom: 2px solid darkseagreen;
     }
 
     footer {
       padding: 20px;
       margin-top: 20px;
+      background-color: darkslategray;
+      color: oldlace;
+      text-align: center;
+      position: sticky;
+      bottom: 0px;
     }
   </style>
 </head>
